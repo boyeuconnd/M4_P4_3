@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>Create a new employee</title>
+</head>
+<body>
+<h3>Welcome, Enter The Employee Details</h3>
+<table>
+    <tr>
+        <td>Name :</td>
+        <td><span th:text="${outputEmployee.getName()}"></span></td>
+    </tr>
+    <tr>
+        <td>ID :</td>
+        <td><span th:text="${outputEmployee.getId()}"></span></td>
+    </tr>
+    <tr>
+        <td>Contact Number :</td>
+        <td><span th:text="${outputEmployee.getPhoneNumber()}"></span></td>
+    </tr>
+</table>
+
+
+</body>
+</html>
